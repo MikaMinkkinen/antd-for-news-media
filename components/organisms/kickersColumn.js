@@ -1,9 +1,9 @@
 import { Row, Col, Divider, Space } from 'antd';
 import Typography, {setConfig} from '@namia/typography';
 import Image from 'next/image'
-import ArticleItem_01 from '../atoms/articleItem_01.js';
-import ArticleItem_03 from '../atoms/articleItem_03.js';
-import ArticleItem_04 from '../atoms/articleItem_04.js';
+import ArticleItem_01 from '../molecules/articleItem_01.js';
+import ArticleItem_03 from '../molecules/articleItem_03.js';
+import ArticleItem_04 from '../molecules/articleItem_04.js';
 
 function KickersColumn() {
 

@@ -1,10 +1,11 @@
 import { Row, Col, Divider, Space } from 'antd';
 import Typography, {setConfig} from '@namia/typography';
 import Image from 'next/image'
-import ArticleItem_01 from '../atoms/articleItem_01.js';
-import ArticleItem_02 from '../atoms/articleItem_02.js';
-import ArticleItem_03 from '../atoms/articleItem_03.js';
-import ArticleItem_04 from '../atoms/articleItem_04.js';
+import ArticleItem_01 from '../molecules/articleItem_01.js';
+import ArticleItem_02 from '../molecules/articleItem_02.js';
+import ArticleItem_03 from '../molecules/articleItem_03.js';
+import ArticleItem_04 from '../molecules/articleItem_04.js';
+import ArticleItem_05 from '../molecules/articleItem_05.js';
 
 function Lists() {
 
@@ -17,25 +18,25 @@ return (
   <Typography elementType="h3" size="5" type="basic">Writers</Typography>
   <Divider />
 
-    <ArticleItem_03 category="face"headline="headline 1" />
+    <ArticleItem_05 category="face"headline="headline 1" />
     <Divider />
-    <ArticleItem_03 category="woman"headline="headline 1" />
+    <ArticleItem_05 category="woman"headline="headline 1" />
     <Divider />
-    <ArticleItem_03 category="men"headline="headline 1" />
+    <ArticleItem_05 category="men"headline="headline 1" />
     <Divider />
-    <ArticleItem_03 category="professional"headline="headline 1" />
+    <ArticleItem_05 category="professional"headline="headline 1" />
     <Divider />
-    <ArticleItem_03 category="journalist"headline="headline 1"/>
+    <ArticleItem_05 category="journalist"headline="headline 1"/>
     <Divider />
-    <ArticleItem_03 category="profile"headline="headline 1"/>
+    <ArticleItem_05 category="profile"headline="headline 1"/>
     <Divider />
-    <ArticleItem_03 category="human"headline="headline 1"/>
+    <ArticleItem_05 category="human"headline="headline 1"/>
     <Divider />
-    <ArticleItem_03 category="boy"headline="headline 1"/>
+    <ArticleItem_05 category="boy"headline="headline 1"/>
     <Divider />
-    <ArticleItem_03 category="girl"headline="headline 1"/>
+    <ArticleItem_05 category="girl"headline="headline 1"/>
     <Divider />
-    <ArticleItem_03 category="old"headline="headline 1"/>
+    <ArticleItem_05 category="old"headline="headline 1"/>
   </Space>
 </Col>
 

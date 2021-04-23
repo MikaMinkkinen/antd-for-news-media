@@ -18,7 +18,7 @@ function ArticleItem_02( props ) {
         <Col xs={{span: 24, order: 1}} lg={{span: 12, order: 2}}>
           <Image
             className="itemimage"
-            alt="Randon placeholder from Unsplash"
+            alt="Random placeholder from Unsplash"
             src={ `https://source.unsplash.com/random/${props.category}` }
             layout="responsive"
             width={1000}

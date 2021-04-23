@@ -2,11 +2,11 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Row, Col, Divider, Space, Layout } from 'antd';
 import Typography, {setConfig} from '@namia/typography';
-import ArticlesMain from '../components/molecules/articlesMain.js';
-import AdArea from '../components/molecules/adArea.js';
-import KickersColumn from '../components/molecules/kickersColumn.js';
-import KickersHierargy from '../components/molecules/kickersHierargy.js';
-import Lists from '../components/molecules/lists.js';
+import ArticlesMain from '../components/organisms/articlesMain.js';
+import AdArea from '../components/organisms/adArea.js';
+import KickersColumn from '../components/organisms/kickersColumn.js';
+import KickersHierargy from '../components/organisms/kickersHierargy.js';
+import Lists from '../components/organisms/lists.js';
 
 setConfig({
   basic: {
@@ -103,6 +103,7 @@ export default function Home() {
           <AdArea/>
           <Divider/>
           <KickersColumn/>
+          <Divider/>
           <KickersHierargy />
           <Divider/>
           <Lists/>
