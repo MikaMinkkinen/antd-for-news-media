@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "lint": "eslint . --quiet",
     "start": "next start"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
@@ -16,8 +21,9 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@namia/eslint-config-namia": "^1.0.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
+    "prettier": "^2.2.1"
   }
 }
