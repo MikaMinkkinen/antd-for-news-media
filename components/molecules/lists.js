@@ -2,6 +2,7 @@ import { Row, Col, Divider, Space } from 'antd';
 import Typography, {setConfig} from '@namia/typography';
 import Image from 'next/image'
 import ArticleItem_01 from '../atoms/articleItem_01.js';
+import ArticleItem_02 from '../atoms/articleItem_02.js';
 import ArticleItem_03 from '../atoms/articleItem_03.js';
 import ArticleItem_04 from '../atoms/articleItem_04.js';
 
@@ -42,25 +43,25 @@ return (
   <Space direction="vertical" style={{ width: '100%'}}>
   <Typography elementType="h3" size="5" type="basic">News</Typography>
   <Divider />
-    <ArticleItem_04 category="night" headline="headline 1"/>
+    <ArticleItem_02 category="architecture" headline="Placeholder headline 1" />
     <Divider />
-    <ArticleItem_04 category="day" headline="headline 1"/>
+    <ArticleItem_02 category="space" headline="Placeholder headline 2" />
     <Divider />
-    <ArticleItem_04 category="evening" headline="headline 1"/>
+    <ArticleItem_02 category="fashion" headline="Placeholder headline 3" />
     <Divider />
-    <ArticleItem_04 category="summer" headline="headline 1"/>
+    <ArticleItem_02 category="winter" headline="Placeholder headline 4" />
     <Divider />
-    <ArticleItem_04 category="winter" headline="headline 1"/>
+    <ArticleItem_02 category="frozen" headline="Placeholder headline 5" />
     <Divider />
-    <ArticleItem_04 category="autum" headline="headline 1"/>
+    <ArticleItem_02 category="dark" headline="Placeholder headline 6" />
     <Divider />
-    <ArticleItem_04 category="watercolour" headline="headline 1"/>
+    <ArticleItem_02 category="scary" headline="Placeholder headline 7" />
     <Divider />
-    <ArticleItem_04 category="happiness" headline="headline 1"/>
+    <ArticleItem_02 category="profesional" headline="Placeholder headline 8" />
     <Divider />
-    <ArticleItem_04 category="thanksgiving" headline="headline 1"/>
+    <ArticleItem_02 category="enterprice" headline="Placeholder headline 9" />
     <Divider />
-    <ArticleItem_04 category="buildings" headline="headline 1"/>
+    <ArticleItem_02 category="quality" headline="Placeholder headline 10" />
   </Space>
 </Col>
 

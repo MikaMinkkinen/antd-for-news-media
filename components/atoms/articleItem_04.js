@@ -21,8 +21,8 @@ function ArticleItem_04( props ) {
       alt="Randon placeholder from Unsplash"
       src={ `https://source.unsplash.com/random/${props.category}` }
       layout="responsive"
-      width={100}
-      height={52}
+      width={1000}
+      height={520}
       />
 </Col>
 </Row>
