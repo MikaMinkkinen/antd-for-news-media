@@ -1,65 +1,115 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { Row, Col, Divider, Space, Layout } from 'antd';
+import Typography, {setConfig} from '@namia/typography';
+import ArticlesMain from '../components/molecules/articlesMain.js';
+import AdArea from '../components/molecules/adArea.js';
+import KickersColumn from '../components/molecules/kickersColumn.js';
+import KickersHierargy from '../components/molecules/kickersHierargy.js';
+import Lists from '../components/molecules/lists.js';
+
+setConfig({
+  basic: {
+    "breakpoints": ["576px", "768px", "992px", "1200px", "1600px"],
+    fontFamily: 'Droid Sans,Helvetica Neue,sans-serif',
+    sizes: {
+      1: [
+        { "breakpointIndex": null, "fontSize": "12px", "lineHeight": "20px" },
+        { "breakpointIndex": 0, "fontSize": "12px", "lineHeight": "20px" },
+        { "breakpointIndex": 1, "fontSize": "12px", "lineHeight": "20px" },
+        { "breakpointIndex": 2, "fontSize": "12px", "lineHeight": "20px" },
+        { "breakpointIndex": 3, "fontSize": "14px", "lineHeight": "22px" }
+      ],
+      2: [
+        { "breakpointIndex": null, "fontSize": "14px", "lineHeight": "22px" },
+        { "breakpointIndex": 0, "fontSize": "14px", "lineHeight": "22px" },
+        { "breakpointIndex": 1, "fontSize": "14px", "lineHeight": "22px" },
+        { "breakpointIndex": 2, "fontSize": "14px", "lineHeight": "22px" },
+        { "breakpointIndex": 3, "fontSize": "16px", "lineHeight": "24px" }
+      ],
+      3: [
+        { "breakpointIndex": null, "fontSize": "16px", "lineHeight": "24px" },
+        { "breakpointIndex": 0, "fontSize": "16px", "lineHeight": "24px" },
+        { "breakpointIndex": 1, "fontSize": "16px", "lineHeight": "24px" },
+        { "breakpointIndex": 2, "fontSize": "16px", "lineHeight": "24px" },
+        { "breakpointIndex": 3, "fontSize": "20px", "lineHeight": "28px" }
+      ],
+      4: [
+        { "breakpointIndex": null, "fontSize": "20px", "lineHeight": "28px" },
+        { "breakpointIndex": 0, "fontSize": "20px", "lineHeight": "28px" },
+        { "breakpointIndex": 1, "fontSize": "20px", "lineHeight": "28px" },
+        { "breakpointIndex": 2, "fontSize": "20px", "lineHeight": "28px" },
+        { "breakpointIndex": 3, "fontSize": "24px", "lineHeight": "32px" }
+      ],
+      5: [
+        { "breakpointIndex": null, "fontSize": "24px", "lineHeight": "32px" },
+        { "breakpointIndex": 0, "fontSize": "24px", "lineHeight": "32px" },
+        { "breakpointIndex": 1, "fontSize": "24px", "lineHeight": "32px" },
+        { "breakpointIndex": 2, "fontSize": "24px", "lineHeight": "32px" },
+        { "breakpointIndex": 3, "fontSize": "24px", "lineHeight": "32px" }
+      ],
+      6: [
+        { "breakpointIndex": null, "fontSize": "30px", "lineHeight": "38px" },
+        { "breakpointIndex": 0, "fontSize": "30px", "lineHeight": "38px" },
+        { "breakpointIndex": 1, "fontSize": "30px", "lineHeight": "38px" },
+        { "breakpointIndex": 2, "fontSize": "30px", "lineHeight": "38px" },
+        { "breakpointIndex": 3, "fontSize": "30px", "lineHeight": "38px" }
+      ],
+      7: [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 0, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 1, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 2, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 3, "fontSize": "38px", "lineHeight": "46px" }
+      ],
+      8: [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 0, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 1, "fontSize": "46px", "lineHeight": "54px" },
+        { "breakpointIndex": 2, "fontSize": "46px", "lineHeight": "54px" },
+        { "breakpointIndex": 3, "fontSize": "46px", "lineHeight": "54px" }
+      ],
+      9: [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 0, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 1, "fontSize": "46px", "lineHeight": "54px" },
+        { "breakpointIndex": 2, "fontSize": "56px", "lineHeight": "64px" },
+        { "breakpointIndex": 3, "fontSize": "56px", "lineHeight": "64px" }
+      ],
+      10: [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 0, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 1, "fontSize": "46px", "lineHeight": "54px" },
+        { "breakpointIndex": 2, "fontSize": "56px", "lineHeight": "64px" },
+        { "breakpointIndex": 3, "fontSize": "68px", "lineHeight": "76px" }
+      ],
+    },
+  },
+});
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
+
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    <main className={styles.main}>
+          <ArticlesMain/>
+          <Divider/>
+          <AdArea/>
+          <Divider/>
+          <KickersColumn/>
+          <KickersHierargy />
+          <Divider/>
+          <Lists/>
+    </main>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+    <footer className={styles.footer}>
+    </footer>
     </div>
   )
 }
