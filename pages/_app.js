@@ -1,8 +1,17 @@
 import 'antd/dist/antd.css';
-import '../styles/globals.css';
+import { setConfig } from '@namia/typography';
+import { globalStyles } from '../styles/globals.css';
+import typographyConfig from '../configs/typography.json';
+
+setConfig(typographyConfig);
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      {globalStyles}
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

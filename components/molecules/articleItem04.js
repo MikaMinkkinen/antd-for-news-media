@@ -1,9 +1,8 @@
 import { Row, Col, Divider, Space } from 'antd';
-import Typography, { setConfig } from '@namia/typography';
+import Typography from '@namia/typography';
 import Image from 'next/image';
 
 function ArticleItem04(props) {
-  const imgstyle = { background: '#F9F0FF' };
   return (
     <Row>
       <Col flex="auto">

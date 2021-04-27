@@ -1,5 +1,5 @@
-import { Row, Col, Divider, Space } from 'antd';
-import Typography, { setConfig } from '@namia/typography';
+import { Row, Col, Space } from 'antd';
+import Typography from '@namia/typography';
 import Image from 'next/image';
 
 function ArticleItem02(props) {

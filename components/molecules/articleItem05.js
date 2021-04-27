@@ -1,5 +1,5 @@
 import { Row, Col, Divider, Space } from 'antd';
-import Typography, { setConfig } from '@namia/typography';
+import Typography from '@namia/typography';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 
