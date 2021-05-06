@@ -6,6 +6,7 @@ import AdArea from '../components/organisms/adArea';
 import KickersColumn from '../components/organisms/kickersColumn';
 import KickersHierargy from '../components/organisms/kickersHierargy';
 import Lists from '../components/organisms/lists';
+import Alert from '../components/atoms/Alert';
 
 export default function Home() {
   return (
@@ -16,6 +17,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Alert
+          message="Success Text"
+          description="Success Description Success Description Success Description"
+          type="success"
+        />
         <ArticlesMain />
         <Divider />
         <AdArea />
