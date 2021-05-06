@@ -1,5 +1,5 @@
 import { Row, Col, Divider, Space } from 'antd';
-import Typography, { setConfig } from '@namia/typography';
+import Typography from '@namia/typography';
 import ArticleItem02 from '../molecules/articleItem02';
 import ArticleItem03 from '../molecules/articleItem03';
 import ArticleItem05 from '../molecules/articleItem05';
