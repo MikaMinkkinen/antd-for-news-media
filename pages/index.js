@@ -18,9 +18,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <Alert
-          message="Success Text"
-          description="Success Description Success Description Success Description"
-          type="success"
+          message="Kestotilaukset nyt -20%"
+          description="Kun teet kestotilauksen tällä viikolla, saat sen ennätyshalpaan hintaan."
+          type="info"
         />
         <ArticlesMain />
         <Divider />

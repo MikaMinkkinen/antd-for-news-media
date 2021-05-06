@@ -14,10 +14,11 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
-    "@namia/typography": "^1.0.2",
     "@emotion/core": "^10",
     "@emotion/styled": "^10",
+    "@namia/typography": "^1.0.2",
     "antd": "4.10",
+    "flow-typed": "^3.3.1",
     "next": "10.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -26,6 +27,7 @@
     "@namia/eslint-config-namia": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
+    "flow-bin": "^0.150.0",
     "prettier": "^2.2.1"
   }
 }
